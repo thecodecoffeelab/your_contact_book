@@ -1,4 +1,6 @@
-# README
+#The_Code_Coffee_Lab - A contact book app based on Ruby on Rails
+Usage:
+Register to create your own contact book, view your contact list, update a contact info or cancel your account.
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
