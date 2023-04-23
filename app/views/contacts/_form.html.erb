@@ -1,0 +1,47 @@
+<%= form_with(model: contact) do |form| %>
+  <% if contact.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+      <ul>
+        <% contact.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%# <%= form.label :first_name, style: "display: block" %> 
+    <%= form.text_field :first_name, class:"from-control", placeholder:"First Name" %>
+  </div>
+
+  <div class="form-group">
+    <%# <%= form.label :last_name, style: "display: block" %> 
+    <%= form.text_field :last_name, class:"from-control", placeholder:"Last Name" %>
+  </div>
+
+  <div class="form-group">
+    <%# <%= form.label :email, style: "display: block" %> 
+    <%= form.text_field :email, class:"from-control", placeholder:"Email" %>
+  </div>
+
+  <div class="form-group">
+    <%# <%= form.label :phone, style: "display: block" %> 
+    <%= form.text_field :phone, class:"from-control", placeholder:"Phone Number" %>
+  </div>
+
+  <div class="form-group">
+    <%# <%= form.label :instagram, style: "display: block" %> 
+    <%= form.text_field :instagram, class:"from-control", placeholder:"Instagram" %>
+  </div>
+
+    <div class="form-group">
+    <%# <%= form.label :instagram, style: "display: block" %> 
+    <%= form.number_field :user_id, id: :contact_user_id, type: :hidden, class:"from-control", value: current_user.id %>
+  </div>
+<br/>
+  <div>
+    <%= form.submit class:"btn btn-success"%>
+  </div>
+<% end %>

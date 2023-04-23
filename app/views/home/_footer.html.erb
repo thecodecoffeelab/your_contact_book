@@ -1,0 +1,90 @@
+<footer>
+    <style>
+        a{
+            color:#b92b27;
+            text-decoration: none;
+            hover:
+        }
+        a:hover {
+        color: brown;
+        text-decoration:none;
+        }
+    </style>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div>
+          <h3> <img
+            src="https://www.thecodecoffeelab.com/img/logo-white.png"
+            alt="logo"
+            width="100px"
+            height="100px"
+          /></h3>
+          <p class="mb-30 footer-desc">The Code Coffee Lab is a Portfolio where I present myself and share the projects I work on.</p>
+        </div>
+      </div>
+      <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+        <div class="">
+          <h4>Quick Link</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="/" class="text-decoration-none">Home</a>
+            </li>
+            <li>
+              <a href="https://www.thecodecoffeelab.com" target="_blank" class="text-decoration-none">The Code Coffee Lab</a>
+            </li>
+            <li>
+              <a href="/home/about" class="text-decoration-none">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-6">
+        <div>
+          <h4>Services</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.thecodecoffeelab.com/#portfolio" target="_blank" class="text-decoration-none">Web development</a>
+            </li>
+            <li>
+              <a href="https://www.thecodecoffeelab.com/#design" target="_blank" class="text-decoration-none">Branding</a>
+            </li>
+            <li>
+              <a href="https://www.thecodecoffeelab.com/#portfolio" target="_blank" class="text-decoration-none">Web Design</a>
+            </li>
+            <li>
+              <a href="https://www.thecodecoffeelab.com/#design" target="_blank" class="text-decoration-none">Graphics Design</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-3 col-md-6">
+        <div>
+          <h4>Newsletter</h4>
+          <div>
+            <label for="Newsletter" class="form-label">Subscribe To My Newsletter</label>
+            <input type="text" class="form-control" Placeholder="Enter Your Email" required>
+            <button onclick="fireSweetAlert()" class="btn btn-secondary mt-3">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center">
+      <div class="copyright">
+        <p>Developed and maintained by <a href="https://www.thecodecoffeelab.com" target="_blank">THE CODE COFFEE LAB</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script>
+
+    function fireSweetAlert() {
+        Swal.fire(
+            'The Code Coffee Lab - Thank you!',
+            'Subscription registered!',
+            'success'
+        )
+    }
+
+  </script>
+</footer>

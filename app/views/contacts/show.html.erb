@@ -1,0 +1,9 @@
+
+<%= render @contact %>
+
+<div>
+  <%= link_to "Update contact", edit_contact_path(@contact), class:"btn btn-success" %>
+  <%= link_to "Back to contacts", contacts_path, class:"btn btn-secondary" %>
+  <br/> <br/>
+  <%= button_to "Delete contact", @contact, method: :delete, data: {confirm: 'Are you sure?' }, class:"btn btn-outline-danger" %>
+</div>

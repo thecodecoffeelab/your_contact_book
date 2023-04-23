@@ -1,0 +1,29 @@
+<table class="table table-striped">
+  <style>
+    .online {
+      color:green;
+    }
+  </style>
+  <thead>
+    <tr>
+      <th scope="col">Full Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Instagram</th>
+      <th scope="col"class="online">Connected user</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+          <%= link_to contact.first_name + ' ' + contact.last_name, contact %>
+        </td>
+      <td><%= contact.email %></td>
+      <td><%= contact.phone %></td>
+      <td><%= contact.phone %></td>
+      <td><%= contact.first_name %></td>
+    </tr>
+  </tbody>
+</table>
+
+

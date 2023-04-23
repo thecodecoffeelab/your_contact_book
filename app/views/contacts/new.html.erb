@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header">
+    <h1>Create New contact</h1>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Provide your details</h5>
+    <p class="card-text">
+      <%= render "form", contact: @contact %>
+    <br>
+    <div>
+  <%= link_to "Back to contacts", contacts_path, class:"btn btn-dark" %>
+</div>
+    </p>
+  </div>
+</div>
